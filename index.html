@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#170d10" />
+  <title>Ayushi & Gaurav — A Love We Chose</title>
+  <meta name="description" content="A cinematic royal wedding invitation for Ayushi & Gaurav." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="petals" class="petals" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="monogram" href="#top" aria-label="Back to top">A<span>&</span>G</a>
+    <nav>
+      <a href="#story">Our Story</a>
+      <a href="#events">Celebrations</a>
+      <a href="#gallery">Moments</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+    <button class="music-btn" id="musicBtn" type="button" aria-label="Toggle music">♫</button>
+    <audio id="weddingMusic" loop>
+      <source src="assets/wedding-music.mp3" type="audio/mpeg">
+    </audio>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg parallax" data-speed="0.08"></div>
+      <div class="hero-glow"></div>
+      <div class="ornament ornament-top">❦</div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A story that began with two hearts</p>
+        <h1>Ayushi <i>&</i> Gaurav</h1>
+        <p class="hero-script">A Love We Chose</p>
+        <p class="hero-date">Together with our families, we invite you to celebrate our forever.</p>
+        <a class="gold-btn" href="#story">Enter our story <span>↓</span></a>
+      </div>
+      <div class="hero-frame">
+        <img src="assets/couple-13.png" alt="Ayushi and Gaurav" />
+      </div>
+      <div class="scroll-cue">scroll to wander <span>↓</span></div>
+    </section>
+
+    <section class="intro paper-section">
+      <div class="mandala" aria-hidden="true">✦</div>
+      <div class="section-inner narrow reveal">
+        <p class="eyebrow">With love, laughter & a little bit of magic</p>
+        <h2>Some stories are written.<br><em>Ours was chosen.</em></h2>
+        <p class="lead">What started with two people finding their way to each other became a promise to keep choosing one another — through every ordinary day and every extraordinary celebration.</p>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2>From <em>us</em> to forever.</h2>
+        </div>
+
+        <div class="story-grid">
+          <article class="story-card story-card-tall reveal">
+            <div class="image-wrap">
+              <img src="assets/couple-16.png" alt="Ayushi and Gaurav together outdoors" />
+            </div>
+            <span class="story-number">01</span>
+            <div class="story-copy">
+              <h3>The beginning</h3>
+              <p>Before the celebrations, there were the little moments — the conversations, the laughter and the comfort of simply being together.</p>
+            </div>
+          </article>
+
+          <article class="story-card reveal">
+            <div class="image-wrap">
+              <img src="assets/couple-01.png" alt="Romantic portrait of the couple" />
+            </div>
+            <span class="story-number">02</span>
+            <div class="story-copy">
+              <h3>Then came love</h3>
+              <p>Somewhere along the way, friendship became a feeling neither of us wanted to let go of.</p>
+            </div>
+          </article>
+
+          <article class="story-card story-card-offset reveal">
+            <div class="image-wrap">
+              <img src="assets/couple-08.png" alt="Ayushi and Gaurav at their celebration" />
+            </div>
+            <span class="story-number">03</span>
+            <div class="story-copy">
+              <h3>The yes</h3>
+              <p>And now, with the people we love around us, we are ready to turn a beautiful chapter into forever.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="events paper-section">
+      <div class="section-inner">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">The Celebrations</p>
+          <h2>Join us as the story unfolds.</h2>
+          <p>Every celebration has its own mood, its own memory, and its own little invitation.</p>
+        </div>
+
+        <div id="eventList" class="event-list"></div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="quote-bg"></div>
+      <div class="quote-content reveal">
+        <span>❦</span>
+        <blockquote>“We found each other.<br>We chose each other.<br>Now we choose forever.”</blockquote>
+        <small>Ayushi & Gaurav</small>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="section-inner">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">A Few Favourite Moments</p>
+          <h2>Pieces of our story.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item large reveal"><img src="assets/couple-20.png" alt="Ayushi and Gaurav celebrating" /></figure>
+          <figure class="gallery-item reveal"><img src="assets/couple-19.png" alt="Ayushi and Gaurav dancing" /></figure>
+          <figure class="gallery-item reveal"><img src="assets/couple-17.png" alt="Ayushi and Gaurav in traditional attire" /></figure>
+          <!-- <figure class="gallery-item wide reveal"><img src="assets/couple-03.png" alt="Ayushi and Gaurav surrounded by petals" /></figure> -->
+          <figure class="gallery-item reveal"><img src="assets/couple-14.png" alt="Ayushi and Gaurav at the floral stage" /></figure>
+          <!-- <figure class="gallery-item reveal"><img src="assets/couple-21.png" alt="Ayushi and Gaurav dancing" /></figure> -->
+          <figure class="gallery-item wide reveal"><img src="assets/couple-10.png" alt="Ayushi and Gaurav together" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="family paper-section">
+      <div class="section-inner family-layout">
+        <div class="family-copy reveal">
+          <p class="eyebrow">With the blessings of our families</p>
+          <h2>It takes a Town<br><em>to celebrate a love.</em></h2>
+          <p>With the love and blessings of our families, we begin this new chapter and would be honoured to have you with us.</p>
+        </div>
+        <div class="family-photo reveal">
+          <img src="assets/couple-11.png" alt="Family celebration" />
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="section-inner narrow centered reveal">
+        <p class="eyebrow">Will you join us?</p>
+        <h2>Save the date.<br><em>Bring your blessings.</em></h2>
+        <p class="lead">Your presence will make these moments even more special. Please let us know if you'll be celebrating with us.</p>
+        <a class="gold-btn" id="rsvpBtn" href="#" target="_blank" rel="noopener">RSVP on WhatsApp <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="countdown-section paper-section">
+      <div class="section-inner centered reveal">
+        <p class="eyebrow">Until we say “I do”</p>
+        <h2>The countdown begins.</h2>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">46</strong><span>days</span></div>
+          <div><strong id="hours">23</strong><span>hours</span></div>
+          <div><strong id="minutes">30</strong><span>minutes</span></div>
+          <div><strong id="seconds">00</strong><span>seconds</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-monogram">A <span>&</span> G</div>
+    <p>With love, Ayushi & Gaurav</p>
+    <p class="footer-small">Made to feel like a letter, a photograph and a celebration — all at once.</p>
+  </footer>
+
+  <div class="route-modal" id="routeModal" aria-hidden="true">
+    <div class="route-backdrop" data-close-route></div>
+    <div class="route-stage">
+      <button class="close-route" type="button" data-close-route>×</button>
+      <div class="route-paper">
+        <div class="route-sky">
+          <div class="route-moon"></div>
+          <div class="route-stars"></div>
+          <div class="route-road"></div>
+          <div class="route-car">🚗</div>
+          <div class="route-pin">◆</div>
+          <div class="route-vignette"></div>
+        </div>
+        <div class="route-info">
+          <p class="eyebrow" id="routeEyebrow">Your destination</p>
+          <h2 id="routeTitle">Venue</h2>
+          <p id="routeMeta"></p>
+          <a id="routeMapLink" class="gold-btn" href="#" target="_blank" rel="noopener">Open in Maps <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
