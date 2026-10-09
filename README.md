@@ -1,4 +1,4 @@
-# Aarav & Siya — Cinematic Wedding Invitation
+# Ayushi & Gaurav — Cinematic Wedding Invitation
 
 A premium, responsive wedding invitation built from scratch in HTML/CSS/JavaScript.
 

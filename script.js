@@ -143,28 +143,56 @@ const musicBtn = document.querySelector("#musicBtn");
 let musicStarted = false;
 
 function startWeddingMusic() {
-  if (musicStarted) return;
+  if (!weddingMusic || musicStarted) return;
 
   weddingMusic.volume = 0.45;
 
-  weddingMusic.play()
-    .then(() => {
-      musicStarted = true;
-      musicBtn.textContent = "♫";
-      musicBtn.classList.add("playing");
-    })
-    .catch(() => {
-      // Browser blocked autoplay; wait for another interaction.
-    });
+  const playPromise = weddingMusic.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        musicStarted = true;
+
+        if (musicBtn) {
+          musicBtn.classList.add("playing");
+          musicBtn.setAttribute("aria-label", "Music playing");
+        }
+
+        // Remove all fallback interaction listeners once music starts
+        removeMusicInteractionListeners();
+      })
+      .catch(() => {
+        // Browser has blocked autoplay.
+        // We will try again on the first user interaction.
+      });
+  }
 }
 
+function handleFirstInteraction() {
+  startWeddingMusic();
+}
+
+function removeMusicInteractionListeners() {
+  ["click", "touchstart", "scroll", "keydown", "pointerdown"].forEach(event => {
+    document.removeEventListener(event, handleFirstInteraction);
+  });
+}
+
+/*
+  1. Try autoplay immediately when page loads
+*/
 window.addEventListener("load", () => {
   startWeddingMusic();
 });
 
-["click", "touchstart", "scroll", "keydown"].forEach(event => {
-  document.addEventListener(event, startWeddingMusic, {
-    once: true,
+/*
+  2. If browser blocks autoplay,
+     start music automatically on the first
+     interaction with the page.
+*/
+["click", "touchstart", "scroll", "keydown", "pointerdown"].forEach(event => {
+  document.addEventListener(event, handleFirstInteraction, {
     passive: true
   });
 });
