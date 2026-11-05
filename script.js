@@ -31,20 +31,20 @@
       // HALDI
       // =====================================================
   
-      {
-        name: "Haldi Ceremony",
+      // {
+      //   name: "Haldi Ceremony",
   
-        date: "19th November",
+      //   date: "19th November",
   
-        venue: "Status Club",
+      //   venue: "Status Club",
   
-        time: "12 noon onwards",
+      //   time: "12 noon onwards",
   
-        image: "assets/couple-02.png",
+      //   image: "assets/couple-02.png",
   
-        map:
-          "https://www.google.com/maps/place/Status+Club/@27.4235785,80.1186076,17z/data=!3m1!4b1!4m9!3m8!1s0x399ef9000cf3ea03:0x30072453d2b19f5d!5m2!4m1!1i2!8m2!3d27.4235785!4d80.1211825!16s%2Fg%2F11lw32_5lh?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
-      },
+      //   map:
+      //     "https://www.google.com/maps/place/Status+Club/@27.4235785,80.1186076,17z/data=!3m1!4b1!4m9!3m8!1s0x399ef9000cf3ea03:0x30072453d2b19f5d!5m2!4m1!1i2!8m2!3d27.4235785!4d80.1211825!16s%2Fg%2F11lw32_5lh?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+      // },
   
   
       // =====================================================
