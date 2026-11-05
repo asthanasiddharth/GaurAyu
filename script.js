@@ -5,7 +5,7 @@
 
    const WEDDING = {
     couple: "Ayushi & Gaurav",
-  
+    /* Countdown for 20th November */
     weddingDate: "2026-11-20T20:00:00+05:30",
   
     whatsapp: "919260903124",
